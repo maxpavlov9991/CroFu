@@ -1,35 +1,66 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="css/index_style.css" rel="stylesheet">
     <title>Register</title>
-    </head>
-    <body>
-    <h2>Register</h2>
-    
-<form action="php/save_user.php" method="post">
+</head>
+
+
+<body>
+    <header>
+            <div id="logotipe" onclick="slowScroll('#top')">
+                <span>CROFU</span> 
+            </div>
+            <div id="about">
+                <a href="index.html">CROFU&nbsp;MENU</a>
+                <a href="myprofile.html">MY&nbsp;PROFILE</a>
+                <a href="info.html">INFO</a>
+                <a href="register.html">REGISTER</a>
+            </div>
+    </header>
+
+<div id="top">
+
+    <div id="register">
+
+        <form action="php/save_user.php" method="post">
     <!--**** save_user.php - это адрес обработчика.  То есть, после нажатия на кнопку "Зарегистрироваться", данные из полей  отправятся на страничку save_user.php методом "post" ***** -->
 <p>
-    <label>Name:<br></label>
+    <h5>Name:<br></h5>
     <input name="name" type="text" maxlength="50" size="30">
     </p>
+    <br>
 <p>
-    <label>SurName:<br></label>
+    <h5>SurName:<br></h5>
     <input name="surname" type="text" maxlength="50" size="30">
     </p>
+    <br>
 <p>
-    <label>Email:<br></label>
+    <h5>Email:<br></h5>
     <input name="mail" type="text" maxlength="50" size="30">
     </p>
+    <br>
 <!--**** В текстовое поле (name="login" type="text") пользователь вводит свой логин ***** -->
 <p>
-    <label>Password:<br></label>
+    <h5>Password:<br></h5>
     <input name="password" type="text" maxlength="50" size="30">
     </p>
+    <br>
 <!--**** В поле для паролей (name="password" type="password") пользователь вводит свой пароль ***** --> 
 <p>
     <input type="submit" name="submit" value="Register">
 <!--**** Кнопочка (type="submit") отправляет данные на страничку save_user.php ***** --> 
 </p>
-</form>
-    </body>
-    </html>
+    </form>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="index_script.js"></script>
+
+</body>
+</html>
 

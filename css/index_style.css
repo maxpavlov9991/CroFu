@@ -33,7 +33,7 @@ header #logotipe span {
 }
 
 #top {
-    padding-top: 25%;
+    padding-top: 20%;
 }
 
 #top h3 {
@@ -103,7 +103,7 @@ header #logotipe span {
 
     #top {
         height:50%!important;
-        padding-top: 80%!important;   
+        padding-top: 70%!important;   
     }
 
     #top h1 {
@@ -206,6 +206,20 @@ header.fixed #logotipe{
         margin-right: 10%!important;
         margin-left: 10%!important;
     }
+}
+#register {
+    font-size: 20pt;
+}
+
+#register input{
+    line-height: 30px;
+}
+
+#login {
+    font-size: 20pt;
+}
+#login input {
+    line-height: 30px;
 }
 
 

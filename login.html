@@ -1,26 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Log in</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/index_style.css" rel="stylesheet">
+	<title>Log In</title>
 </head>
+
+
 <body>
-    <h2>Log in</h2>
+    <header>
+        <div id="logotipe" onclick="slowScroll('#top')">
+            <span>CROFU</span> 
+        </div>
+        <div id="about">
+            <a href="index.html">CROFU&nbsp;MENU</a>
+            <a href="myprofile.html">MY&nbsp;PROFILE</a>
+            <a href="info.html">INFO</a>
+            <a href="register.html">REGISTER</a>
+        </div>
+    </header>
+
+<div id="top">
+
+    <div id="login">
 	<form action="php/login.php" method="post">
 <!--**** Форма для проверки данных пользователя ***** -->
-
-	 <label>Email:<br></label>
+	 <h5>Email:<br></h5>
     <input name="mail" type="text" maxlength="50" size="30">
     </p>
+    <br>
 <!--**** В текстовое поле (name="mail" type="text") пользователь вводит свой mail ***** -->
 	<p>
-    <label>Password:<br></label>
+    <h5>Password:<br></h5>
     <input name="password" type="text" maxlength="50" size="30">
     </p>
+    <br>
 <!--**** В поле для паролей (name="password" type="password") пользователь вводит свой пароль ***** --> 
 	<p>
     <input type="submit" name="submit" value="Log in">
 <!--**** Кнопочка (type="submit") отправляет данные на страничку check_user.php ***** --> 
-	</p>
+    </p>
 	</form>
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="index_script.js"></script>
+
 </body>
 </html>
