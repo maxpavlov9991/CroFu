@@ -118,7 +118,7 @@ header #logotipe span {
 .fixed {
     z-index: 5000;
     background-color: white;
-    border-bottom: 3px solid black;
+    border-bottom: 1px solid black;
 }
 
 header.fixed #logotipe{
