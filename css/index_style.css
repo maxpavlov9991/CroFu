@@ -5,7 +5,6 @@
 }
 
 body, html {
-
     width: 100%;
     height: 100%;
 }
@@ -29,23 +28,17 @@ header #logotipe {
 }
 
 header #logotipe span {
-    font-size: 5em;
-    margin-left: 40px;
+    font-size: 60pt;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#top h1 {
-    padding-top: 20%;
+#top {
+    padding-top: 25%;
 }
 
 #top h3 {
     color: indianred;
 }
-
-
-
-
-
 
 #about {
     text-align: center;
@@ -56,6 +49,8 @@ header #logotipe span {
 
 #about > a {
     color: white;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 #about > a:hover{
@@ -63,62 +58,68 @@ header #logotipe span {
     text-decoration: underline;
 }
 
-#about > a:not(:last-child){
-    margin-right:5%;
-}
 
-.fixed {
-    z-index: 5000;
-    background-color: white;
-    border-bottom: 1px solid silver;
-}
-
-@media (min-width: 551px) {
+@media (min-width: 601px) {
     #logotipe {
         float: left;
-        width: 20%;
-    }
-    #about {
-        margin-top: 35px;
-        float: right;
-        width: 50%;
-        font-size: 25pt;
-        
-    }
-}
-
-@media (max-width: 550px) {
-    #logotipe{
-        margin-top: 10px;
-        margin-left:5px;
-        width: 100%;
+        width: 15%;
     }
 
     #logotipe span {
-        font-size:3em!important;
+        margin-left: 40px;
     }
 
     #about {
-        float: left;
+        margin-top: 20px;
+        float: right;
+        width: 50%;
+        font-size: 30pt;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    #logotipe{
+        text-align: center;
+        margin-top: 5px;
         width: 100%;
     }
+    
+    #logotipe span {
+        font-size:30pt!important;
+        margin-left: 0px;
+    }
 
-    #about:nth-child(odd){
-        margin-left : 15%;
+    #about {
+        float: center;
+        text-align: center;
+        width: 100%;
+        font-size: 15pt;
+    }
+
+    #about > a {
+        margin-right: 1%;
+        margin-left: 1%;
     }
 
     #top {
-        height:700px!important;
+        height:50%!important;
+        padding-top: 70%!important;   
     }
 
     #top h1 {
         font-size: 40pt;
-        padding-top: 80%!important;   
     }
 
     #top h3 {
         font-size: 25pt;
     }
+}
+
+.fixed {
+    z-index: 5000;
+    background-color: white;
+    border-bottom: 3px solid black;
 }
 
 header.fixed #logotipe{
@@ -139,7 +140,7 @@ header.fixed #logotipe{
 
 #top {
     width:100%;
-    height: 1000px;
+    height: 100%;
     background-image: url(/media/music.png);
     background-blend-mode: multiply;
     background-color: #4a4a4e;
@@ -149,11 +150,6 @@ header.fixed #logotipe{
     font-size: 45pt;
 }
 
-@media (max-width: 400px){
-    #top{
-        padding-top: 40%;
-    }
-}
 
 
 #main{
@@ -161,7 +157,6 @@ header.fixed #logotipe{
     float: left;
     width: 60%;
     background-color: white;
-    border-top: 2px solid silver;
     color: black;
 }
 
@@ -181,18 +176,16 @@ header.fixed #logotipe{
     float: left;
     width: 20%;
     margin-right: 15%;
+    margin-left: 15%;
     margin-top:100px;
 }
 
-#overview .img:nth-child(odd){
-    margin-left : 15%;
-}
 
 #overview img {
     background-color: #fafafa;
-    padding: 5px;
+    padding: 10px;
     border: 2px solid black;
-    float: left;
+    float: center;
     width: 100%;
     max-width: 500px;
 }
@@ -211,7 +204,7 @@ header.fixed #logotipe{
 
     #overview .img {
         width: 80%;
-        margin-right: 0!important;
+        margin-right: 10%!important;
         margin-left: 10%!important;
     }
 }
