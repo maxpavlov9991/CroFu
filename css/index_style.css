@@ -149,8 +149,6 @@ header.fixed #logotipe{
     font-size: 45pt;
 }
 
-
-
 #main{
     padding: 100px 20%;
     float: left;
@@ -207,6 +205,9 @@ header.fixed #logotipe{
         margin-left: 10%!important;
     }
 }
+
+
+
 #register {
     font-size: 20pt;
 }
