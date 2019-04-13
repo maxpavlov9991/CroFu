@@ -73,7 +73,7 @@ header #logotipe span {
     border-bottom: 1px solid silver;
 }
 
-@media (min-width: 501px) {
+@media (min-width: 551px) {
     #logotipe {
         float: left;
         width: 20%;
