@@ -1,5 +1,4 @@
 'use strict';
-
 function slowScroll(id) {
     $('html').animate({
         scrollTop: $(id).offset().top

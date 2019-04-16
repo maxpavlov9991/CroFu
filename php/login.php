@@ -1,5 +1,6 @@
 <?php
-	 
+	
+	session_start();
     if (isset($_POST['mail'])) 
 	{ 
 	$mail = $_POST['mail'];
@@ -44,8 +45,8 @@
 	{
 		$_SESSION['logged_mail']=$mail;
 		$_SESSION['logged_passowrd']=$password;
-		echo "Вы успешно авторизованны! Теперь вы можете зайти на сайт. <a href='../index.html'>Главная страница</a>";
-		
+		header('Location: index.php');
+	
 	}
 	
 ?>

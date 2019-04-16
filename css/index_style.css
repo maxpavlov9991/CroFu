@@ -74,6 +74,7 @@ header #logotipe span {
         font-size: 13pt;
         line-height: 35px;
     }
+
 }
 
 @media (max-width: 670px) {
@@ -113,6 +114,13 @@ header #logotipe span {
     #top h3 {
         font-size: 25pt;
     }
+
+    #myprofile {
+        padding-top: 25%!important;
+    }
+
+    
+    
 }
 
 .fixed {
@@ -206,8 +214,6 @@ header.fixed #logotipe{
     }
 }
 
-
-
 #register {
     font-size: 20pt;
 }
@@ -222,6 +228,94 @@ header.fixed #logotipe{
 #login input {
     line-height: 30px;
 }
+
+#myprofile {
+    padding-top: 5%;
+    width: 100%;
+    height: 80%;
+    background-image: url(/media/music.png);
+    background-blend-mode: multiply;
+    background-color: #4a4a4e;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 45pt;
+}
+
+#myprofile #avatar {
+    height: 300px;
+    width: 300px;
+    border: 2px solid white;
+    float: center;
+}
+
+#myprofile input {
+    height: 5%;
+    width: 280px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+}
+
+#myprofile #tok_quan {
+    margin-top: 1%;
+    color: rgb(205, 92, 92);
+}
+
+#myprofile input:focus {
+    background-color: white;
+    color: black;
+}
+
+#myprofile button {
+    margin: 0 2% 0 2%;
+    height: 6%;
+    width: 280px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 50%;
+    float: center;
+    
+}
+#myprofile  button:hover{
+    background-color: white;
+    color: black;
+}
+
+#myprofile #save{
+    float: right;
+}
+#myprofile #upload{
+    float: left;
+}
+
+#myprofilemusic {
+    border-top: 5px dotted rgb(205, 92, 92);
+    background-color: white;
+    width: 100%;
+    height: 30%;
+    font-size:15pt;
+    padding: 1%;
+    overflow: auto;
+
+}
+
+#myprofilemusic audio {
+    margin: 1% 0 1% 0;
+    width: 80%;
+    height: 15%;
+}
+
+#myprofilemusic span {
+    float: left;
+    width: 10%;
+    font-size: 11pt;
+    color: black;
+}
+
 
 
 
