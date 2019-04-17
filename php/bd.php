@@ -1,7 +1,7 @@
 <?php
 	$username = "root";
-	$passwordbd = "qetuo13579";
-	$hostname = "localhost";
+	$passwordbd = "password";
+	$hostname = "hostname";
 	$bdname = "Customers";
 	$db = mysqli_connect($hostname,$username,$passwordbd);
     mysqli_select_db($db,"Customers");
