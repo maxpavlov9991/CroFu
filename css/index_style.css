@@ -232,7 +232,6 @@ header.fixed #logotipe{
 #myprofile {
     padding-top: 5%;
     width: 100%;
-    height: 80%;
     background-image: url(/media/music.png);
     background-blend-mode: multiply;
     background-color: #4a4a4e;
@@ -245,12 +244,12 @@ header.fixed #logotipe{
 #myprofile #avatar {
     height: 300px;
     width: 300px;
+    margin: auto;
     border: 2px solid white;
     float: center;
 }
 
 #myprofile input {
-    height: 5%;
     width: 280px;
     border: 2px solid white;
     background-color: transparent;
@@ -260,7 +259,6 @@ header.fixed #logotipe{
 }
 
 #myprofile #tok_quan {
-    margin-top: 1%;
     color: rgb(205, 92, 92);
 }
 
@@ -271,7 +269,6 @@ header.fixed #logotipe{
 
 #myprofile button {
     margin: 0 2% 0 2%;
-    height: 6%;
     width: 280px;
     border: 2px solid white;
     background-color: transparent;
@@ -296,7 +293,6 @@ header.fixed #logotipe{
     border-top: 5px dotted rgb(205, 92, 92);
     background-color: white;
     width: 100%;
-    height: 30%;
     font-size:15pt;
     padding: 1%;
     overflow: auto;
