@@ -40,9 +40,50 @@
 	{
 		$photo_name="musician.png";
 		
-	}
+	}	
 	$date = date('m/d/Y h:i:s a', time());
 
+	$size_of_play_list=mysqli_query($db , "SELECT customer_id , COUNT(*) FROM music_customer WHERE customer_id='".$user_id['id']."'");
+	$rows=mysqli_fetch_row($size_of_play_list);
+	$total_count_of_client_music=$rows[1];
+	//echo $total_count_of_client_music;
+	
+	$result=mysqli_query($db , "SELECT music_id FROM music_customer WHERE customer_id='".$user_id['id']."'");
+	$storearray=Array();
+	while ($row=mysqli_fetch_array($result , MYSQLI_ASSOC))
+	{
+		$storearray[]=$row['music_id'];
+	}
+	
+	
+	
+	function generate($arg_1 , $arg_2)
+	{
+
+		
+		for($i=0 ; $i<$arg_1 ; $i++)
+		{
+			$expansion=".mp3";
+			$result=$arg_2[$i] . $expansion;
+			
+			$str=$str . <<<HTML
+		<span>Maksex_Beatz</span>
+        <audio controls>
+        <source src="../music/$result">
+        </audio>
+        <br>
+HTML;
+		}
+	return $str;
+
+	}
+	
+	$my_playlist=generate($total_count_of_client_music , $storearray);
+	
+	
+	
+	//echo $storearray[0];
+	//print_r($storearray); вывести весь массив
 	
 	
 		echo<<<HTML
@@ -52,7 +93,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="../css/myprofile.css" rel="stylesheet">
+    <link href="../css/content.css" rel="stylesheet">
     <title>My Profile</title>
 </head>
 
@@ -100,43 +141,7 @@
 		</form>
 		</div>
 		
-		
-		
-        <span>Maksex_Beatz</span>
-        <audio controls>
-            <source src="../music/1.mp3">
-        </audio>
-        <br>
-    
-        <span>Богемская Рапсодия</span>
-        <audio controls>
-            <source src="../music/2.mp3">
-        </audio>
-        <br>
-    
-        <span>SCARLORD</span>
-        <audio controls>
-            <source src="../music/3.mp3">
-        </audio>
-        <br>
-    
-        <span>ASAP ROCKY</span>
-        <audio controls>
-            <source src="../music/4.mp3">
-        </audio>
-        <br>
-    
-        <span>RSAC - NBA</span>
-        <audio controls>
-            <source src="../music/5.mp3">
-        </audio>
-        <br>
-    
-        <span>SHANGUY</span>
-        <audio controls>
-            <source src="../music/6.mp3">
-        </audio>
-        <br>
+	$my_playlist
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -147,6 +152,7 @@
 HTML;
 	
 	}
+	
 	else
 	{
 		header('Location: ../login.html');

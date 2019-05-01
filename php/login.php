@@ -44,7 +44,7 @@
 	else
 	{
 		$_SESSION['logged_mail']=$mail;
-		$_SESSION['logged_passowrd']=$password;
+		$_SESSION['logged_password']=$password;
 		header('Location: index.php');
 	
 	}

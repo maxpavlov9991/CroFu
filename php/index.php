@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	if(isset($_SESSION['logged_mail']) && isset($_SESSION['logged_passowrd']))
+	if(isset($_SESSION['logged_mail']) && isset($_SESSION['logged_password']))
 	{
         echo<<<HTML
         <!DOCTYPE html>
