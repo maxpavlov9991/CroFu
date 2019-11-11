@@ -1,4 +1,4 @@
-#(CLOSED)
+#CLOSED
 
 ##Crowdfunding platform CroFu
 
